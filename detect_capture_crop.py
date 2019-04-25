@@ -14,7 +14,7 @@ def main():
     parser.add_argument(
       '--model', help='File path of Tflite model.', required=True)
     parser.add_argument(
-      '--label', help='File path of label file.', required=True)
+      '--label', help='File path of labels file.', default=None)
     args = parser.parse_args()
 
     with open(args.label, 'r') as f:
